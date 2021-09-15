@@ -5,12 +5,13 @@
   "main": "a.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start":"node a.js"
+    "start": "node a.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "ejs": "^3.1.6",
     "express": "^4.17.1"
   }
 }
