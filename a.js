@@ -10,13 +10,13 @@ const path1 = path.join(__dirname, 'views/a.html');
 
 const port = process.env.PORT || 3000;
 
-const path2 = path.join(__dirname, './views/');
+const path2 = path.join(__dirname, './views');
 
 exp.use(express.static(path2));
 
 exp.get('/', (req, res) => {
     res.sendFile(path1);
-});
+}); 
  
 // exp.get('/b.html', (req, res) => {
 //     res.sendFile(path2);
