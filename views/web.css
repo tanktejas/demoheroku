@@ -7,7 +7,7 @@
   min-height: 100vh;
   width: 100%;
   background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
-    url(./eduford_img/logodes.jpg);
+    url(logodes.jpg);
   background-position: center;
   background-size: cover;
   position: relative;
@@ -132,7 +132,7 @@ nav .fas {
 }
 
 .lang p {
-  font-size: 34px;
+  font-size: 28px;
   font-weight: 900;
   background: blanchedalmond;
   font-family: "Ubuntu", sans-serif;
@@ -296,7 +296,7 @@ nav .fas {
     text-align: center;
   }
   .lang h1 {
-    font-size: 30px;
+    font-size: 40px;
   }
 }
 
