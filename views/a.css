@@ -75,8 +75,7 @@ nav img {
   background-color: yellow;
   width: 100%;
 }
-.navlink ul li:hover {
-}
+
 .navlink ul li:hover::before {
   border-left: yellow;
   background-color: yellow;
@@ -99,7 +98,7 @@ nav img {
   margin: 10px 0 40px;
   font-size: 14px;
 }
-
+ 
 .btn {
   font-size: 32px;
   background-color: rgb(255, 248, 247);
@@ -138,11 +137,15 @@ nav .fas {
   background: blanchedalmond;
   font-family: "Ubuntu", sans-serif;
 }
+.course {
+  overflow: hidden;
+}
 .row1 .course {
   height: 410px;
   width: 290px;
   border-radius: 12px;
   margin-top: 34px;
+  border-radius: 12px;
   text-align: center;
   background: rgb(117, 224, 238);
 }
@@ -155,7 +158,7 @@ nav .fas {
 .course h1 {
   font-family: "Noto Sans JP", sans-serif;
   /* text-align: center; */
-}
+}     
 .tem {
   font-size: 34px;
   height: 50px;
@@ -339,7 +342,6 @@ nav .fas {
   color: brown;
 }
 .row1 {
-  
 }
 /* DEMO-SPECIFIC STYLES */
 .typewriter h1 {

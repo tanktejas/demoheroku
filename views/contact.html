@@ -55,8 +55,9 @@
             <li><a href="web.html">Home</a></li>
             <li><a href="about.html">About Us</a></li>
             <li><a href="coddingconstest.html">Codding Contests</a></li>
+          <li><a href="game.html">Play Game</a></li>
             <li><a href="contact.html">Contact</a></li>
-          </ul>
+          </ul>   
         </div>
       </nav>
       <div class="body">
@@ -75,7 +76,7 @@
     </section>
     <!-- form-->
     <div class="wrapper">
-      <form class="form">
+      <form class="form" action="../a.js">
         <div class="pageTitle title">Contact Us</div>
         <div class="secondaryTitle title">
           Please fill this form stay in contact &#128512.
@@ -91,6 +92,19 @@
         <button class="submit formEntry" onclick="thanks()">Submit</button>
       </form>
     </div>
+    <h3>
+      Rate This App.
+    </h1>
+    <div class="star">
+      <ul>
+        <li id="star"><i class="fa fa-star" aria-hidden="true"></i></li>
+        <li id="star"><i class="fa fa-star" aria-hidden="true"></i></li>
+        <li id="star"><i class="fa fa-star" aria-hidden="true"></i></li>
+        <li id="star"><i class="fa fa-star" aria-hidden="true"></i></li>
+        <li id="star"><i class="fa fa-star" aria-hidden="true"></i></li>
+      </ul>
+    </div>
+ 
 <!-- footer -->
 <div class="footer-dark">
   <footer>
@@ -129,7 +143,48 @@
             ><i class="icon ion-social-instagram fa-instagra"></i
           ></a>
          </div>
-  </footer>
+  </footer>    
+  <script>
+  const a=document.querySelectorAll('#star');
+  
+  function showrating(e){
+  
+    let type=e.type; 
+    let starval=this.starval;
+                        
+    a.forEach((ele,ind)=>{
+          if(type==="click"){
+            if(ind<starval){
+              ele.classList.add("orange");
+              console.log(ele); 
+            }else{
+              ele.classList.remove("orange"); 
+            }
+          }          
+          if(type==="mouseover"){
+            if(ind<starval){
+              ele.classList.add("yellow");
+                
+            }else{
+              ele.classList.remove("yellow"); 
+            }
+          }
+          if(type==="mouseout"){
+              ele.classList.remove("yellow"); 
+          } 
+    });
+  }
+  
+
+ for(x=0;x<5;x++){
+   a[x].starval=(x+1);
+       
+  ["click","mouseover","mouseout"].forEach((s)=>{
+        a[x].addEventListener(s,showrating);
+  });   
+} 
+          
+  </script>
   <script src="web.js"></script>
   </body> 
 </html>

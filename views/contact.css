@@ -146,3 +146,41 @@
 .submit {
   background-color: rgb(253, 14, 181);
 }
+.star ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.star ul li {
+  list-style: none;
+  padding: 0px 12px;
+  font-size: 56px;
+  color: rgb(233, 233, 233);
+  cursor: pointer;
+}
+h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center !important;
+  font-weight: bold !important;
+}
+.block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.block p {
+  height: 90px;
+  width: 314px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 63px;
+}
+.orange {
+  color: orange !important;
+}
+.yellow {
+  color: yellow !important;
+}
