@@ -2,7 +2,7 @@
 const mongoose = require('mongoose');
  
 const validator=require('validator');
-const bcrypt=require('bcrypt');
+  
  
 mongoose.connect("mongodb://localhost:27017/contactapp", {
     // useCreateIndex:true,                  
