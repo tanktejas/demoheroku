@@ -19,21 +19,21 @@ const path2 = path.join(__dirname, './views');
 exp.use(express.static(path2));
                 
 //ragistration form req. handle  
-const bcrypt=require("bcrypt");
+ 
 exp.post("/ragister",async(req,res)=>{
-    try{   
+    // try{   
          
-    // const data= await collection.find({email:req.email});
-    const data=req.body;
-    
-    data.password=await bcrypt.hash(data.password,10);
-    data.password1=null;
-    console.log(data);  
-     const s=await collection.insertMany(data);
-     console.log(s);    
-    }catch(err){
-        res.send(`${err}`);
-    }
+    // // const data= await collection.find({email:req.email});
+    // const data=req.body;
+     
+    // data.password=await bcrypt.hash(data.password,10);
+    // data.password1=null;
+    // console.log(data);  
+    //  const s=await collection.insertMany(data);
+    //  console.log(s);    
+    // }catch(err){
+    //     res.send(`${err}`);
+    // }
     });   
 exp.post('/',(req,res)=>{
     console.log(1);
